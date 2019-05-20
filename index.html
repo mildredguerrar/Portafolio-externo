@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <title>Leonidas Esteban</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
+      <style> 
+      /** https://jonassebastianohlsson.com/criticalpathcssgenerator/ **/
+        @font-face{font-family:'icomoon';src:url('/fonts/icomoon.eot?166b67');src:url('/fonts/icomoon.eot?166b67#iefix') format('embedded-opentype'),url('/fonts/icomoon.ttf?166b67') format('truetype'),url('/fonts/icomoon.woff?166b67') format('woff'),url('/fonts/icomoon.svg?166b67#icomoon') format('svg');font-weight:normal;font-style:normal}[class^="icon-"]{font-family:'icomoon'!important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{font-family:'Source Sans Pro',system-ui;margin:0}h1,h3,h4{font-family:'Fjalla One',system-ui;font-weight:normal}h1{font-size:40px;line-height:1.5;letter-spacing:-.2px;color:white;margin:0;max-width:500px}h1 strong{color:#026fff}ol,ul{margin:0;padding:0;list-style:none}.container{max-width:1024px;flex:1;margin:0 auto;display:inherit;justify-content:inherit;align-items:inherit;height:inherit;flex-wrap:inherit}@media screen and (max-width:1023px){.container{margin:0 15px}h1{position:relative;z-index:2}}@media screen and (max-width:550px){h1{font-size:2em}}@media screen and (max-width:480px){h1{font-size:1.5em}}@media screen and (max-width:320px){h1{font-size:1.2em}}
+      </style>
   </head>
   <body>
     <i class="icon-menu burger-menu" id="burger-menu"></i>
@@ -36,7 +38,8 @@
         <h1>
           Hola! Soy <strong>Leonidas Esteban</strong> <br/> Desarrollador  <strong>Javascript</strong> con <br> pasión por la <strong>enseñanza</strong>
         </h1>
-        <img class="hero-image" src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio">
+        <img class="hero-image" src="images/hero.png" srcset="images/hero.png,images/hero@2x.png 2x, " width="500" height="300" alt="imagen principal del sitio">
+
       </div>
     </section>
     <section id="portafolio" class="portfolio">
@@ -56,20 +59,6 @@
           <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="prouyecto del curso de React Native">
         </figure>
       </article>
-      <article class="project">
-          <div class="project-details">
-            <h3 class="project-title">Platzi Video</h3>
-            <h6 class="project-course">React Native / React</h6>
-            <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
-            <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
-            <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo
-                para crear la mejor app para enseñar el funcionamiento
-                de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
-          </div>
-          <figure class="project-imageContainer">
-            <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="prouyecto del curso de React Native">
-          </figure>
-        </article>
       </div>
 
     </section>
@@ -80,44 +69,17 @@
       <div class="container">
         <article class="event">
           <figure class="event-imageContainer">
-            <div class="video-container">
-              <iframe class="video-src" width="560" height="315" src="https://www.youtube.com/embed/BIS7cWGgJg0?controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen ></iframe>
-            </div>
-            <!-- <img class="event-image" src="images/platzi-conf.jpg" width="500" /> -->
+            <img class="event-image" src="images/f8.jpg" width="500" />
           </figure>
           <div class="event-detail">
-            <h3 class="event-title">PlatziConf México 2018</h3>
-            <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
-            <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
+            <h3 class="event-title">Conferencia F8 2018</h3>
+            <p class="event-description">Conferencia Facebook Facebook Developer</p>
+            <a class="event-url" href="https://www.youtube.com/watch?v=LoKvxCSZw5w" target="_blank">Ver Plática</a>
           </div>
         </article>
         <article class="event">
           <figure class="event-imageContainer">
-            <div class="video-container">
-              <iframe class="video-src" width="560" height="315" src="https://www.youtube.com/embed/LoKvxCSZw5w?controls=0" frameborder="0"
-                allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-            <!-- <img class="event-image" src="images/platzi-conf.jpg" width="500" /> -->
-          </figure>
-          <div class="event-detail">
-            <h3 class="event-title">PlatziConf México 2018</h3>
-            <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
-            <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
-          </div>
-        </article>
-        <article class="event">
-          <figure class="event-imageContainer">
-            <img class="event-image" src="images/platzi-conf.jpg" width="500" />
-          </figure>
-          <div class="event-detail">
-            <h3 class="event-title">PlatziConf México 2018</h3>
-            <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje.</p>
-            <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Plática</a>
-          </div>
-        </article>
-        <article class="event">
-          <figure class="event-imageContainer">
-            <img class="event-image" src="images/platzi-conf.jpg" width="500" />
+            <img class="event-image" src="images/platzi-conf.png" width="500" />
           </figure>
           <div class="event-detail">
             <h3 class="event-title">PlatziConf México 2018</h3>
@@ -153,7 +115,7 @@
           </p>
         </div>
       </div>
-    </footer>
+    </footer>    
     <script>
       const $burgerMenu = document.querySelector('#burger-menu');
       const $menu = document.querySelector('.menu');
@@ -182,5 +144,6 @@
         }
       }
     </script>
+   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
   </body>
 </html>
